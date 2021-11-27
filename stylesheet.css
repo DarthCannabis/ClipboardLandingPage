@@ -1,0 +1,135 @@
+body {
+  margin: auto;
+  font-family: "Bai Jamjuree", sans-serif;
+  background: white url(/bg-header-mobile.png) no-repeat;
+  background-size: contain;
+  text-align: center;
+  max-width: 375px;
+}
+.column {
+  width: 100%;
+}
+p {
+  color: hsl(201, 11%, 66%);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(210, 10%, 33%);
+}
+button {
+  margin: 0.75em;
+  border: none;
+  border-radius: 20em;
+  color: white;
+  padding: 0.75em 3em;
+}
+.iosBtn {
+  background-color: hsl(171, 66%, 44%);
+}
+.macBtn {
+  background-color: hsl(233, 100%, 69%);
+}
+.topbutt,
+.bottbutt {
+  margin: auto auto 5em auto;
+}
+
+.head {
+  margin: 1em;
+}
+
+.mainimgs {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.monitor {
+  flex-basis: 100%;
+}
+
+.bottomrows {
+  margin: 3em auto;
+}
+.bottrowcont {
+  margin: 3em;
+}
+.footlinks {
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.logos {
+  margin: 3em auto;
+  display: block;
+}
+
+.fotsoc {
+  margin: 0.5em;
+}
+@media only screen and (min-width: 600px) {
+  body {
+    background: white url(/bg-header-desktop.png) no-repeat;
+    max-width: 100%;
+  }
+  .monitor {
+    display: flex;
+    flex-wrap: no-wrap;
+  }
+  .monpic {
+    width: 100%;
+    margin-right: ;
+  }
+  .quickcol {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    margin: 5% 17% 5% 8%;
+  }
+  .logos {
+    display: inline;
+    margin: 1.5em;
+    grid-template-areas: ;
+  }
+  .bottomrows {
+    margin-bottom: 0em;
+    display: grid;
+    grid-template-areas: "a b c";
+  }
+  .bottomlogos {
+    margin-bottom: 5em;
+    width: 100%;
+    display: flex grid;
+    grid-template-areas: "a b c d e";
+  }
+  .footlinks {
+    width: 100%;
+  }
+  .bottlinks {
+    display: grid;
+    grid-template-columns: no-repeat(6, 1fr);
+    grid-template-rows: 30px;
+    grid-template-areas:
+      "bottimg b c d socials"
+      "bottimg e f g socials";
+  }
+  .footsocials {
+    margin: auto;
+    grid-area: socials;
+  }
+  .bottimg {
+    margin: auto;
+    width: 30%;
+    grid-area: bottimg;
+  }
+}
